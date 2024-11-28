@@ -1,0 +1,364 @@
+/* Define estilos básicos para todos os elementos da página */
+* {
+    margin: 0; /* Remove todas as margens */
+    padding: 0; /* Remove todos os preenchimentos */
+    box-sizing: border-box; /* Inclui borda e padding no cálculo do tamanho total do elemento */
+}
+  
+/* Estiliza o corpo da página com uma fonte padrão */
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte Roboto com fallback para sans-serif */
+}
+  
+/* Define o fundo e exibe os elementos em linha flexível */
+main {
+    background-color: #f8f8f8; /* Cor de fundo cinza claro */;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Barra de navegação */
+.nav-bar {
+    background-color: #fff; /* Fundo branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-bottom: 1px solid #ddd; /* Linha separadora inferior */
+    align-content: center; /* Centraliza conteúdo flexível */
+    height: 70px; /* Define a altura da barra */
+}
+  
+/* Lista de navegação */
+.nav-list {
+    list-style: none; /* Remove marcadores da lista */
+    display: flex; /* Exibe itens da lista em linha */
+    justify-content: flex-end; /* Alinha itens à direita */
+    gap: 30px; /* Espaço entre itens */
+}
+  
+/* Links dentro da lista */
+.nav-list li a {
+    text-decoration: none; /* Remove sublinhado */
+    color: #1C1E53; /* Cor do texto */
+}
+  
+.nav-list li a:hover {
+    color: #FF6464; /* Cor ao passar o mouse */
+}
+
+/* Seção hero (principal) */
+.hero-section {
+    max-width: 900px; /* Largura máxima da seção */
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text > h1 {
+    font-size: 2em;
+    color: #282938;
+}
+
+.hero-text > h1 > span {
+    color: #6371FF;
+}
+
+.hero-text > p {
+    margin: 20px 0;
+    color: #1C1E53;
+}
+
+/* Grupo de botões */
+.button-group {
+    display: flex; /* Exibe botões lado a lado */
+    gap: 15px; /* Espaçamento entre botões */
+    margin-top: 100px; /* Margem superior */
+}
+  
+/* Botão padrão */
+.btn {
+    padding: 10px 20px; /* Espaçamento interno */
+    border: 1px solid #FF6464; /* Borda vermelha */
+    text-decoration: none; /* Remove sublinhado */
+    color: #FF6464; /* Cor do texto */
+    border-radius: 4px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza texto */
+    width: 279px; /* Largura fixa */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+  
+/* Botão LinkedIn com estilo diferenciado */
+.btn.linkedin {
+    background-color: #FF6464; /* Fundo vermelho */
+    color: #fff; /* Texto branco */
+}
+  
+/* Estilo ao passar o mouse */
+.btn:hover {
+    background-color: #FF6464;
+    color: #fff;
+}
+
+.hero-image > img {
+    max-width: 100%;
+    background-color: #FF646480;
+    height: auto;
+    width: 380px;
+    padding: 50px 30px 0 50px;
+}
+  
+/* Seção de formações */
+.section-formacoes {
+    padding: 50px 20px; /* Espaçamento interno */
+    max-width: 900px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+  
+/* Título */
+h2 {
+    font-size: 32px;
+    color: #282938;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+  
+/* Lista de formações */
+.list-formacao {
+    list-style: none; /* Remove marcadores */
+}
+  
+.formacao-item {
+    display: flex; /* Exibe itens em linha */
+    justify-content: space-between; /* Espaço entre os itens */
+    align-items: flex-start; /* Alinha itens ao topo */
+    border-bottom: 2px solid #e6e6e6; /* Linha separadora inferior */
+    padding: 60px 0; /* Espaçamento superior e inferior */
+    font-weight: bold; /* Texto em negrito */
+}
+  
+.formacao-item a {
+    color: #FF6464; /* Cor do link */
+}
+  
+/* Título de terceiro nível */
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000000; /* Preto */
+}
+  
+/* Parágrafos com opacidade */
+p {
+    font-size: 16px;
+    color: #00000080; /* Preto com 50% de opacidade */
+}
+  
+/* Data das formações */
+.formacao-data {
+    font-size: 14px;
+    color: #777; /* Cinza */
+    font-weight: bold;
+}
+
+/* Seção Sobre Mim */
+.sobre-mim-section {
+    background-color: rgba(255, 100, 100, 0.5); /* Vermelho com opacidade */
+    padding: 60px 80px; /* Espaçamento interno */
+} 
+
+.sobre-mim-container {
+    display: flex; /* Layout flexível */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 136px; /* Espaço entre os elementos */
+}
+  
+.sobre-mim-image img {
+    width: 200px; /* Largura fixa */
+    border-radius: 50%; /* Torna a imagem circular */
+}
+  
+.sobre-mim-text {
+    max-width: 50%; /* Limita a largura */
+}
+
+.sobre-mim-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #f8f8f8;    
+}
+
+.sobre-mim-text p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #f8f8f8;
+}
+
+/* Secao experiencia */
+.section-experiencias {
+    background-color: #f8f8f8;
+    height: 600px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.section-experiencias h2 {
+    margin-top: 90px;
+}
+
+.texto-experiencia {
+    margin-top: 100px;
+    font-size: 1.5em;
+}
+
+/* Rodapé */
+footer {
+    background-color: #FF646480;
+    padding-top: 40px;
+} 
+
+.lista-rodape li {
+    padding-top: 25px;
+    margin-left: 30px;
+    color: #1C1E53;
+    font-weight: 700;
+    font-size: 18px;
+    list-style: none;
+} 
+
+.estilo-icone {
+    font-size: 20px;
+    padding-right: 10px; /*Espaço à direita do ícone*/ 
+}
+
+.redes-sociais {
+    color: #1C1E53;
+    font-weight: 700;
+    gap: 14px;
+}
+
+.lista-rodape li > a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.container-rodape {
+    margin-left: 30px;
+}
+
+.fa-linkedin {
+    color: #FFFFFF; 
+}
+
+.direitos {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #555; 
+    text-align: center;
+}
+
+/* Responsividade para diferentes telas */
+@media (max-width: 1024px) {
+.hero-container, .sobre-mim-container {
+    flex-direction: column;
+    text-align: center;
+}
+
+.sobre-mim-container {
+    gap: 2px
+
+}
+
+.sobre-mim-text, .hero-text {
+    max-width: 100%;
+}
+
+.hero-section, .section-formacoes, .sobre-mim-section {
+    padding: 50px 20px;
+}
+
+.formacoes-list {
+    padding: 0;
+}
+
+.button-group {
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 580px;
+}
+}
+
+@media (max-width: 768px) {
+.hero-section {
+    padding: 40px 15px;
+}
+
+.container-principal {
+    display: block;
+}
+
+.section-formacoes {
+    padding: 30px 10px;
+}
+
+.sobre-mim-section {
+    padding: 30px 15px;
+}
+
+.btn {
+    padding: 10px 15px;
+}
+}
+
+@media (max-width: 480px) {
+.hero-text h1 {
+    font-size: 24px;
+}
+
+.hero-text p, .sobre-mim-text p {
+    font-size: 14px;
+}
+
+.sobre-mim-container {
+    gap: 2px;
+
+}
+
+.sobre-mim-container h2 {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+.button-group {
+    margin-top: 50px;
+}
+
+.formacao-item {
+    gap: 32px;
+}
+
+footer {
+    padding: 10px;
+}
+
+.nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nav-bar {
+    height: 100px;
+}
+}
